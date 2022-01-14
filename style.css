@@ -57,6 +57,7 @@ slider-section
 .slider-text button{
     padding: 10px 20px;
     margin: 20px 0px;
+    font-weight: 600;
     border: none;
     border-radius:20px;
     color: white;
@@ -94,12 +95,134 @@ brand-section
     width:80px;
     height: 80px;
 }
-/* ========================
-Responsive code 
-==========================*/
 
-/* Mobile code  */
+/* =============
+articles-section
+================*/
 
+.articles-section{
+    width: 90%;
+    padding: 10px;
+    margin: 60px auto;
+}
+#collection-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.articles{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.article-item{
+    width:calc(33% - 20px);
+    background-color:white;
+    padding:10px;
+    margin:15px 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+}
+.article-img img{
+    width: 100%;
+    height: 11rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#price{
+    margin-top: 10px;
+    font-weight:500;
+}
+#stare{
+    font-size:9px;
+    line-height:1.9;
+    color: orange;
+}
+
+.article-info span{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.article-smail p{
+    font-size: small;
+    line-height: 1.7;
+    font-weight:600;
+    color: #787885;
+}
+
+/* ============
+navfooter-section
+================*/
+.navfooter-section{
+    width: 100%;
+    background-color: #232F3E;
+    color: white;
+}
+#back{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #485769;
+    color: white;
+    padding: 10px;
+}
+.navfooter{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   margin: auto;
+   padding:20px;
+}
+
+.navfooter-item h2{
+    line-height: 3;
+}
+.navfooter-item ul li {
+    list-style: none;
+    line-height: 2;
+}
+.navfooter-item a{
+    color: white;
+}
+/* ==============
+footer
+================= */
+.footer{
+    width: 100%;
+    padding: 20px;
+    text-align:center;
+    background-color: #0A0826;
+    color: white;
+}
+
+.footer p{
+    line-height: 2;
+}
+.footer a{
+    color: white;
+    margin:5px;
+    font-size:27px;
+}
+
+
+/* ======================== Responsive code =======================*/
+
+/* ---------------Android Mobile-------------------- */
+
+/* =============
+ Responsive top-bar-section
+==============*/
 @media (max-width:800px) {
     .top-bar-section{
         width: 100%;
@@ -115,7 +238,9 @@ Responsive code
   }
 }
 
-
+/* =================
+Responsive slider-section 
+================= */
 @media (max-width:800px) {
     .slider-section{
         display: flex;
@@ -130,5 +255,50 @@ Responsive code
     .slider-img{
         width: 100%;
         order: 1;
+    }
+}
+/* ================
+Responsive articles-section
+================ */
+
+@media (max-width:720px) {
+    .article-item{
+        width:calc(100% - 20px);
+        background-color:white;
+        padding:10px;
+        margin:15px 10px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    }
+}
+/* =============
+Responsive navfooter-section
+=============== */
+@media (max-width:720px) {
+    .navfooter{
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+
+/* --------------------Tablet Phone-------------------- */
+
+@media (max-width:900px) {
+    .article-item{
+        width:calc(50% - 20px);
+        background-color:white;
+        padding:10px;
+        margin:15px 10px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
     }
 }
