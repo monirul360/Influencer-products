@@ -160,7 +160,11 @@ articles-section
     font-weight:600;
     color: #787885;
 }
-
+#see-more{
+    color: #E02C6D;
+    float: right;
+    margin-top:20px;
+}
 /* ============
 navfooter-section
 ================*/
@@ -175,7 +179,7 @@ navfooter-section
     text-align: center;
     background-color: #485769;
     color: white;
-    padding: 10px;
+    padding: 15px;
 }
 .navfooter{
     width: 90%;
@@ -261,6 +265,22 @@ Responsive slider-section
 Responsive articles-section
 ================ */
 
+@media (max-width:900px) {
+    .article-item{
+        width:calc(50% - 20px);
+        background-color:white;
+        padding:10px;
+        margin:15px 10px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    }
+}
+
+
 @media (max-width:720px) {
     .article-item{
         width:calc(100% - 20px);
@@ -285,20 +305,3 @@ Responsive navfooter-section
     }
 }
 
-
-/* --------------------Tablet Phone-------------------- */
-
-@media (max-width:900px) {
-    .article-item{
-        width:calc(50% - 20px);
-        background-color:white;
-        padding:10px;
-        margin:15px 10px;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-        box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
-    }
-}
