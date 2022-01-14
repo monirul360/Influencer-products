@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
 }
 a{
     text-decoration: none;
@@ -15,12 +16,12 @@ top-bar-section
 ============= */
 
 .top-bar-section{
-    width: 100%;
+    width:90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 30px 0;
-    padding: 20px;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +35,7 @@ top-bar-section
 slider-section 
 ======*/
 .slider-section{
-    width:80%;
+    width:90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,9 +79,20 @@ brand-section
 .brand-section{
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
+    flex-wrap:wrap;
     margin:50px auto;
+    border-top: 1px solid rgba(122, 113, 113, 0.226);
+    border-bottom:1px solid rgba(122, 113, 113, 0.226);
+}
+.brand-item{
+ width:80px;
+ margin:15px;
+}
+.brand-item img{
+    width:80px;
+    height: 80px;
 }
 /* ========================
 Responsive code 
